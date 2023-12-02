@@ -1,6 +1,6 @@
 package com.example.trybevirtualmenu.mealDataClass
 
-data class menuItem(
+data class MenuItem(
     val id: Int,
     val nome: String,
     val imagem: Int,

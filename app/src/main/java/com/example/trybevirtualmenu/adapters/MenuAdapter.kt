@@ -9,10 +9,10 @@ import androidx.recyclerview.widget.RecyclerView.Adapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.example.trybevirtualmenu.R
 import com.example.trybevirtualmenu.interfaces.MenuItemListener
-import com.example.trybevirtualmenu.mealDataClass.menuItem
+import com.example.trybevirtualmenu.mealDataClass.MenuItem
 
 @Suppress("DEPRECATION")
-class MenuAdapter(val meal: List<menuItem>) : Adapter<MenuAdapter.MenuViewHolder>() {
+class MenuAdapter(val meal: List<MenuItem>) : Adapter<MenuAdapter.MenuViewHolder>() {
 
     private var menuListener: MenuItemListener? = null
 

@@ -1,11 +1,11 @@
 package com.example.trybevirtualmenu.common
 
 import com.example.trybevirtualmenu.R
-import com.example.trybevirtualmenu.mealDataClass.menuItem
+import com.example.trybevirtualmenu.mealDataClass.MenuItem
 
 object MenuDB {
     private val items = listOf(
-        menuItem(
+        MenuItem(
             id = 1,
             nome = "File de Carne com Fritas",
             imagem = R.drawable.prato_01,
@@ -17,7 +17,7 @@ object MenuDB {
                 "sabor que vai satisfazer seus desejos mais carnívoros.",
             preco = "R\$ 65,00"
         ),
-        menuItem(
+        MenuItem(
             id = 2,
             nome = "Frango Grelhado com Legumes",
             imagem = R.drawable.prato_02,
@@ -30,7 +30,7 @@ object MenuDB {
                 " e deliciosa para quem busca um toque de frescor.",
             preco = "R\$ 45,00"
         ),
-        menuItem(
+        MenuItem(
             id = 3,
             nome = "Mix de File de Carne e Frango Grelhados",
             imagem = R.drawable.prato_03,
@@ -47,7 +47,7 @@ object MenuDB {
                 "essa escolha ainda mais especial.",
             preco = "R\$ 85,00"
         ),
-        menuItem(
+        MenuItem(
             id = 4,
             nome = "Picanha Grelhada com Macaxeira Frita",
             imagem = R.drawable.prato_04,
@@ -60,7 +60,7 @@ object MenuDB {
                 "o melhor da culinária brasileira.",
             preco = "R\$ 90,00"
         ),
-        menuItem(
+        MenuItem(
             id = 5,
             nome = "Porção de Batatas Fritas com Molho",
             imagem = R.drawable.prato_05,
@@ -78,7 +78,7 @@ object MenuDB {
                 "para qualquer refeição.",
             preco = "R\$ 20,00"
         ),
-        menuItem(
+        MenuItem(
             id = 6,
             nome = "Suco de Laranja",
             imagem = R.drawable.bebida_01,
@@ -96,5 +96,5 @@ object MenuDB {
     )
 
     fun findAll() = items
-    fun getMealById(id: Int) = items.find { it.id === id }
+    fun getMealById(id: Int) = items.find { it.id == id }
 }
