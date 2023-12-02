@@ -19,8 +19,7 @@ object MenuDB {
         menuItem(
             "Frango Grelhado com Legumes",
             R.drawable.prato_02,
-            "Uma opção saudável e " +
-                    "saborosa: peitos de " +
+            "Uma opção saudável e " + "saborosa: peitos de " +
                     "frango suculentos " +
                     "grelhados à perfeição, " +
                     "acompanhados de legumes frescos, " +

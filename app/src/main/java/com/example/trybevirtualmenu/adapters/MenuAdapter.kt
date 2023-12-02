@@ -28,5 +28,4 @@ class MenuAdapter(val meal: List<menuItem>) : Adapter<MenuAdapter.MenuViewHolder
         holder.name.text = meal[position].nome
         holder.image.setImageResource(meal[position].imagem)
     }
-
 }
