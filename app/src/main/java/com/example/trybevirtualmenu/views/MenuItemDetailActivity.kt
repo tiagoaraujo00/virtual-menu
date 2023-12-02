@@ -28,8 +28,8 @@ class MenuItemDetailActivity : AppCompatActivity() {
         price.text = meal.preco
 
         button.setOnClickListener {
-            val it = Intent(this, MainActivity::class.java)
-            startActivity(it)
+            val back = Intent(this, MainActivity::class.java)
+            startActivity(back)
         }
     }
 }
