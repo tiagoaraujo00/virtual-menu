@@ -5,14 +5,15 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.Adapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.example.trybevirtualmenu.R
 import com.example.trybevirtualmenu.interfaces.MenuItemListener
 import com.example.trybevirtualmenu.mealDataClass.MenuItem
 
-@Suppress("DEPRECATION")
-class MenuAdapter(val meal: List<MenuItem>) : Adapter<MenuAdapter.MenuViewHolder>() {
+
+class MenuAdapter(private val meal: List<MenuItem>) : Adapter<MenuAdapter.MenuViewHolder>() {
 
     private var menuListener: MenuItemListener? = null
 
@@ -24,11 +25,14 @@ class MenuAdapter(val meal: List<MenuItem>) : Adapter<MenuAdapter.MenuViewHolder
         val name: TextView = view.findViewById(R.id.item_menu_name)
         val image: ImageView = view.findViewById(R.id.item_menu_image)
 
-        init {
-            view.setOnClickListener {
-                menuListener?.onMenuItemClick(view, adapterPosition)
-            }
-        }
+//        init {
+//            view.setOnClickListener {
+//                val position = adapterPosition
+//                if (position != RecyclerView.NO_POSITION) {
+//                    menuListener?.onMenuItemClick(view, meal[position])
+//                }
+//            }
+//        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MenuViewHolder {
@@ -42,5 +46,6 @@ class MenuAdapter(val meal: List<MenuItem>) : Adapter<MenuAdapter.MenuViewHolder
     override fun onBindViewHolder(holder: MenuViewHolder, position: Int) {
         holder.name.text = meal[position].nome
         holder.image.setImageResource(meal[position].imagem)
+        holder.itemView.setOnClickListener {  MenuItemListener?.onMenuItemClick(meal[position]) }
     }
 }
