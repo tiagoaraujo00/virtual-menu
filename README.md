@@ -1,5 +1,6 @@
+<h1 align="center" id="title">Virtual Menu</h1>
 
-# Virtual Menu
+<p align="center"><img src="https://socialify.git.ci/tiagoaraujo00/virtual-menu/image?language=1&amp;name=1&amp;owner=1&amp;theme=Light" alt="project-image"></p>
 
 O Sistema de Cardápio para Restaurante Android é um aplicativo desenvolvido para proporcionar uma experiência interativa e informativa aos clientes ao explorarem as opções gastronômicas oferecidas por um restaurante. Com uma interface intuitiva e visualmente atraente, o aplicativo busca facilitar a navegação e a escolha de pratos, proporcionando informações detalhadas sobre cada item do cardápio.
 
